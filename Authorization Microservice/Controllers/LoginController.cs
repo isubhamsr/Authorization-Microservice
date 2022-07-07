@@ -68,7 +68,7 @@ namespace Authorization_Microservice.Controllers
                             _config["Jwt:Issuer"],
                             _config["Jwt:Audience"],
                             claims,
-                            expires: DateTime.UtcNow.AddMinutes(10),
+                            expires: DateTime.UtcNow.AddMinutes(30),
                             signingCredentials: signIn);
 
                         //return Ok(new JwtSecurityTokenHandler().WriteToken(token));
