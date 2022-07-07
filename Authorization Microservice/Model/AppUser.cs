@@ -10,6 +10,6 @@ namespace Authorization_Microservice.Model
         public string? Password { get; set; }
         public string? Email { get; set; }
         public long? Mobile { get; set; }
-        public DateTime? RegistrationDate { get; set; }
+        public DateTime? RegistrationDate { get; set; } = DateTime.Now;
     }
 }
